@@ -1,30 +1,33 @@
 class Solution {
-    public int longestConsecutive(int[] nums) {
+    public List<List<Integer>> fourSum(int[] nums, int target) {
+        List<List<Integer>> ans = new ArrayList<>();
+        Arrays.sort(nums);
 
-        HashSet<Integer> set = new HashSet<>();
+        for (int i = 0; i < nums.length - 3; i++) {
+            if (i > 0 && nums[i] == nums[i - 1]) continue;
 
-        for (int num : nums) {
-            set.add(num);
-        }
+            for (int j = i + 1; j < nums.length - 2; j++) {
+                if (j > i + 1 && nums[j] == nums[j - 1]) continue;
 
-        int longest = 0;
+                int l = j + 1, r = nums.length - 1;
 
-        for (int num : set) {
+                while (l < r) {
+                    long sum = (long) nums[i] + nums[j] + nums[l] + nums[r];
 
-            if (!set.contains(num - 1)) {
+                    if (sum == target) {
+                        ans.add(Arrays.asList(nums[i], nums[j], nums[l], nums[r]));
 
-                int current = num;
-                int length = 1;
+                        while (l < r && nums[l] == nums[l + 1]) l++;
+                        while (l < r && nums[r] == nums[r - 1]) r--;
 
-                while (set.contains(current + 1)) {
-                    current++;
-                    length++;
+                        l++;
+                        r--;
+                    } 
+                    else if (sum < target) l++;
+                    else r--;
                 }
-
-                longest = Math.max(longest, length);
             }
         }
-
-        return longest;
+        return ans;
     }
 }
