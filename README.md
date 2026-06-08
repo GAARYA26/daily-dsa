@@ -19,9 +19,9 @@ Tracking my Data Structures and Algorithms journey for placement and interview p
 
 | Topic | Questions Solved |
 |---------|---------|
-| Arrays | 29 |
+| Arrays | 31 |
 | Strings | 0 |
-| HashMaps | 0 |
+| HashMaps | 2 |
 | Linked Lists | 0 |
 | Stacks | 0 |
 
