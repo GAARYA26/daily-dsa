@@ -8,6 +8,7 @@ Tracking my Data Structures and Algorithms journey for placement and interview p
 - Arrays
 - Strings
 - HashMaps
+- Greedy Algorithm
 - Linked Lists
 - Stacks
 - Queues
@@ -22,6 +23,7 @@ Tracking my Data Structures and Algorithms journey for placement and interview p
 | Arrays | 32 |
 | Strings | 0 |
 | HashMaps | 3 |
+| Greedy Algorithm | 3 |
 | Linked Lists | 16 |
 | Stacks | 0 |
 
