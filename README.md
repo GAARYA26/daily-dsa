@@ -24,7 +24,7 @@ Tracking my Data Structures and Algorithms journey for placement and interview p
 | Arrays | 32 |
 | Strings | 0 |
 | HashMaps | 3 |
-| Recursion | 3 |
+| Recursion | 4 |
 | Greedy Algorithm | 6 |
 | Linked Lists | 16 |
 | Stacks | 0 |
